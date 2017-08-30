@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>DEVICE, run RUN</title>
+		<style>
+		table,th,td
+		{
+			border:1px solid black;
+		}
+		</style>
+	</head>
+	<body>
+
+		<h1>DEVICE, run RUN</h1>
+		<p><a href="plots/DEVICE_RUN_summary.txt">File list, event counts and temperatures</a></p>
+
+		<h2>Baseline run</h2>
+		<p><a href="plots/DEVICE_RUN.base">baseline calibration</a></p>
+		<p><a href="plots/DEVICE_RUN_baseline.root">ROOT file of plots</a></p>
+		<p><a href="plots/DEVICE_RUN__muxbaseline.root">ROOT file of plots, readout channel ordering</a></p>
+
+		<h3>Pedestal, noise, sample shifts</h3>
+
+		<a href="plots/DEVICE_RUN_base.png">
+			<img src="plots/DEVICE_RUN_base.png" alt="Baseline" width="500">
+		</a>
+		<a href="plots/DEVICE_RUN_base_apvmeans.png">
+			<img src="plots/DEVICE_RUN_base_apvmeans.png" alt="APV means" width="500">
+		</a><br/>
+
+		<a href="plots/DEVICE_RUN_base_pedestal.png">
+			<img src="plots/DEVICE_RUN_base_pedestal.png" alt="Baseline pedestal" width="500">
+		</a>
+		<a href="plots/DEVICE_RUN_base_noise.png">
+			<img src="plots/DEVICE_RUN_base_noise.png" alt="Baseline noise" width="500">
+		</a><br/>
+
+		<a href="plots/DEVICE_RUN_base_shift.png">
+			<img src="plots/DEVICE_RUN_base_shift.png" alt="Baseline sample-to-sample shift" width="500">
+		</a><br/>
+
+
+		<h3>Noise correlations, physical channel ordering</h3>
+		<a href="plots/DEVICE_RUN_pos_corr.png">
+			<img src="plots/DEVICE_RUN_pos_corr.png" alt="Baseline noise correlations - positive" width="500">
+		</a>
+		<a href="plots/DEVICE_RUN_neg_corr.png">
+			<img src="plots/DEVICE_RUN_neg_corr.png" alt="Baseline noise correlations - negative" width="500">
+		</a><br/>
+		<p> PDFs of the same plots: <a href="plots/DEVICE_RUN_pos_corr.pdf">positive correlations</a> <a href="plots/hmodule17_neg_corr.pdf">negative correlations</a></p>
+		<a href="plots/DEVICE_RUN_corr_adj.png">
+			<img src="plots/DEVICE_RUN_corr_adj.png" alt="Baseline noise correlations - adjacent channels" width="500">
+		</a><br/>
+
+		<h3>Noise correlations, readout channel ordering</h3>
+		<a href="plots/DEVICE_RUN_mux_pos_corr.png">
+			<img src="plots/DEVICE_RUN_mux_pos_corr.png" alt="Baseline noise correlations - positive" width="500">
+		</a>
+		<a href="plots/DEVICE_RUN_mux_neg_corr.png">
+			<img src="plots/DEVICE_RUN_mux_neg_corr.png" alt="Baseline noise correlations - negative" width="500">
+		</a><br/>
+		<p> PDFs of the same plots: <a href="plots/DEVICE_RUN_mux_pos_corr.pdf">positive correlations</a> <a href="plots/hmodule17_mux_neg_corr.pdf">negative correlations</a></p>
+		<a href="plots/DEVICE_RUN_mux_corr_adj.png">
+			<img src="plots/DEVICE_RUN_mux_corr_adj.png" alt="Baseline noise correlations - adjacent channels" width="500">
+		</a><br/>
+
+		<hr>
+
+		<h2>Calibration/timing runs</h2>
+
+<!--
+<table>
+<tr>
+  <th></th>
+  <th>Delay 1</th>
+  <th>Delay 2</th>
+  <th>Delay 3</th>
+  <th>Delay 4</th>
+  <th>Delay 5</th>
+  <th>Delay 6</th>
+  <th>Delay 7</th>
+  <th>Delay 8</th>
+</tr>
+<tr>
+  <th>Cal group 0</th>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d1.conf">DEVICE_RUN_cal_g0_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d2.conf">DEVICE_RUN_cal_g0_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d3.conf">DEVICE_RUN_cal_g0_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d4.conf">DEVICE_RUN_cal_g0_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d5.conf">DEVICE_RUN_cal_g0_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d6.conf">DEVICE_RUN_cal_g0_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d7.conf">DEVICE_RUN_cal_g0_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g0_d8.conf">DEVICE_RUN_cal_g0_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 1</th>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d1.conf">DEVICE_RUN_cal_g1_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d2.conf">DEVICE_RUN_cal_g1_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d3.conf">DEVICE_RUN_cal_g1_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d4.conf">DEVICE_RUN_cal_g1_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d5.conf">DEVICE_RUN_cal_g1_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d6.conf">DEVICE_RUN_cal_g1_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d7.conf">DEVICE_RUN_cal_g1_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g1_d8.conf">DEVICE_RUN_cal_g1_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 2</th>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d1.conf">DEVICE_RUN_cal_g2_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d2.conf">DEVICE_RUN_cal_g2_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d3.conf">DEVICE_RUN_cal_g2_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d4.conf">DEVICE_RUN_cal_g2_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d5.conf">DEVICE_RUN_cal_g2_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d6.conf">DEVICE_RUN_cal_g2_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d7.conf">DEVICE_RUN_cal_g2_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g2_d8.conf">DEVICE_RUN_cal_g2_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 3</th>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d1.conf">DEVICE_RUN_cal_g3_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d2.conf">DEVICE_RUN_cal_g3_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d3.conf">DEVICE_RUN_cal_g3_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d4.conf">DEVICE_RUN_cal_g3_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d5.conf">DEVICE_RUN_cal_g3_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d6.conf">DEVICE_RUN_cal_g3_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d7.conf">DEVICE_RUN_cal_g3_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g3_d8.conf">DEVICE_RUN_cal_g3_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 4</th>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d1.conf">DEVICE_RUN_cal_g4_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d2.conf">DEVICE_RUN_cal_g4_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d3.conf">DEVICE_RUN_cal_g4_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d4.conf">DEVICE_RUN_cal_g4_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d5.conf">DEVICE_RUN_cal_g4_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d6.conf">DEVICE_RUN_cal_g4_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d7.conf">DEVICE_RUN_cal_g4_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g4_d8.conf">DEVICE_RUN_cal_g4_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 5</th>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d1.conf">DEVICE_RUN_cal_g5_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d2.conf">DEVICE_RUN_cal_g5_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d3.conf">DEVICE_RUN_cal_g5_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d4.conf">DEVICE_RUN_cal_g5_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d5.conf">DEVICE_RUN_cal_g5_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d6.conf">DEVICE_RUN_cal_g5_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d7.conf">DEVICE_RUN_cal_g5_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g5_d8.conf">DEVICE_RUN_cal_g5_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 6</th>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d1.conf">DEVICE_RUN_cal_g6_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d2.conf">DEVICE_RUN_cal_g6_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d3.conf">DEVICE_RUN_cal_g6_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d4.conf">DEVICE_RUN_cal_g6_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d5.conf">DEVICE_RUN_cal_g6_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d6.conf">DEVICE_RUN_cal_g6_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d7.conf">DEVICE_RUN_cal_g6_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g6_d8.conf">DEVICE_RUN_cal_g6_d8.conf</a></td>
+</tr>
+<tr>
+  <th>Cal group 7</th>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d1.conf">DEVICE_RUN_cal_g7_d1.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d2.conf">DEVICE_RUN_cal_g7_d2.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d3.conf">DEVICE_RUN_cal_g7_d3.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d4.conf">DEVICE_RUN_cal_g7_d4.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d5.conf">DEVICE_RUN_cal_g7_d5.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d6.conf">DEVICE_RUN_cal_g7_d6.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d7.conf">DEVICE_RUN_cal_g7_d7.conf</a></td>
+  <td><a href="plots/DEVICE_RUN_cal_g7_d8.conf">DEVICE_RUN_cal_g7_d8.conf</a></td>
+</tr>
+</table>-->
+
+		<p><a href="plots/DEVICE_RUN.tp_pos">pulse shape fit constants</a></p>
+		<p><a href="plots/DEVICE_RUN.shape_pos">raw pulse shape</a></p>
+		<p><a href="plots/DEVICE_RUN_tp.root">ROOT file of plots</a></p>
+		<h3>Aggregate fits to find pulse shape</h3>
+		<a href="plots/DEVICE_RUN_tp_fit_pos_0.png">
+			<img src="plots/DEVICE_RUN_tp_fit_pos_0.png" alt="Pulse shape fit for positive pulses - channel 0" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_tp_Tp_pos.png">
+			<img src="plots/DEVICE_RUN_tp_Tp_pos.png" alt="Pulse shape fits for positive pulses - shaping time" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_tp_T0_pos.png">
+			<img src="plots/DEVICE_RUN_tp_T0_pos.png" alt="Pulse shape fits for positive pulses - t0 shift" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_tp_A_pos.png">
+			<img src="plots/DEVICE_RUN_tp_A_pos.png" alt="Pulse shape fits for positive pulses - amplitude" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_tp_Chisq_pos.png">
+			<img src="plots/DEVICE_RUN_tp_Chisq_pos.png" alt="Pulse shape fits for positive pulses - fit chisq" width="500">
+		</a><br/>
+
+		<!--<h3>Hit-by-hit fits</h3>
+		<a href="plots/DEVICE_RUN_anfit_t0_T0_hist_pos.png">
+			<img src="plots/DEVICE_RUN_anfit_t0_T0_hist_pos.png" alt="Pulse shape fits for positive pulses - shaping time" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_anfit_t0_chiprob_pos.png">
+			<img src="plots/DEVICE_RUN_anfit_t0_chiprob_pos.png" alt="Pulse shape fits for positive pulses - shaping time" width="500">
+		</a><br/>
+
+		<h4>Time and amplitude resolution at each cal delay (stars mark error reported by fitter, dots mark spread in distribution of fitted values)</h4>
+		<a href="plots/DEVICE_RUN_anfit_t0_T0_sigma_pos.png">
+			<img src="plots/DEVICE_RUN_anfit_t0_T0_sigma_pos.png" alt="Pulse shape fits for positive pulses - shaping time" width="500">
+		</a><br/>
+		<a href="plots/DEVICE_RUN_anfit_t0_A_sigma_pos.png">
+			<img src="plots/DEVICE_RUN_anfit_t0_A_sigma_pos.png" alt="Pulse shape fits for positive pulses - shaping time" width="500">
+		</a><br/>-->
+
+	</body>
+</html>

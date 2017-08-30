@@ -1,0 +1,463 @@
+<system>
+   <config>
+      <DataCompress>False</DataCompress>
+      <DataFile></DataFile>
+      <DebugCmdTime>True</DebugCmdTime>
+      <DebugEnable>True</DebugEnable>
+      <Enabled>True</Enabled>
+      <HideDataControl>False</HideDataControl>
+      <HideRunControl>False</HideRunControl>
+      <PollPeriod>0</PollPeriod>
+      <PollStatusEn>False</PollStatusEn>
+      <RunCount>1000</RunCount>
+      <RunRate>1Hz</RunRate>
+      <FrontEndTestFpga>
+         <Enabled>True</Enabled>
+         <AxiVersion>
+            <Enabled>True</Enabled>
+            <ScratchPad>0x0</ScratchPad>
+         </AxiVersion>
+         <FebCore>
+            <A1.6VTrim>0xb4</A1.6VTrim>
+            <A2.2VTrim>0x96</A2.2VTrim>
+            <A2.9VAvddTrim>0xb4</A2.9VAvddTrim>
+            <A2.9VDvddTrim>0xb4</A2.9VDvddTrim>
+            <Adc0ClkPhaseShift>0xa0</Adc0ClkPhaseShift>
+            <Adc1ClkPhaseShift>0xa0</Adc1ClkPhaseShift>
+            <Adc2ClkPhaseShift>0xa0</Adc2ClkPhaseShift>
+            <Adc3ClkPhaseShift>0xa0</Adc3ClkPhaseShift>
+            <AdcPgpFrameSize>0x30</AdcPgpFrameSize>
+            <AllowResync>True</AllowResync>
+            <ApvDataStreamEn>0xf</ApvDataStreamEn>
+            <CalDelay>0x0</CalDelay>
+            <CalEn>False</CalEn>
+            <Enabled>True</Enabled>
+            <FebAddress>0x0</FebAddress>
+            <HeaderHighThreshold>0x3000</HeaderHighThreshold>
+            <Hybrid0AvddTrim>0xaa</Hybrid0AvddTrim>
+            <Hybrid0ClkPhaseShift>0x0</Hybrid0ClkPhaseShift>
+            <Hybrid0DvddTrim>0x96</Hybrid0DvddTrim>
+            <Hybrid0PwrEn>False</Hybrid0PwrEn>
+            <Hybrid0V1_25Trim>0xb4</Hybrid0V1_25Trim>
+            <Hybrid1AvddTrim>0xaa</Hybrid1AvddTrim>
+            <Hybrid1ClkPhaseShift>0x0</Hybrid1ClkPhaseShift>
+            <Hybrid1DvddTrim>0x96</Hybrid1DvddTrim>
+            <Hybrid1PwrEn>False</Hybrid1PwrEn>
+            <Hybrid1V1_25Trim>0xb4</Hybrid1V1_25Trim>
+            <Hybrid2AvddTrim>0xaa</Hybrid2AvddTrim>
+            <Hybrid2ClkPhaseShift>0x0</Hybrid2ClkPhaseShift>
+            <Hybrid2DvddTrim>0x96</Hybrid2DvddTrim>
+            <Hybrid2PwrEn>False</Hybrid2PwrEn>
+            <Hybrid2V1_25Trim>0xb4</Hybrid2V1_25Trim>
+            <Hybrid3AvddTrim>0xaa</Hybrid3AvddTrim>
+            <Hybrid3ClkPhaseShift>0x0</Hybrid3ClkPhaseShift>
+            <Hybrid3DvddTrim>0x96</Hybrid3DvddTrim>
+            <Hybrid3PwrEn>False</Hybrid3PwrEn>
+            <Hybrid3V1_25Trim>0xb4</Hybrid3V1_25Trim>
+            <HybridAdcDataStreamEn>0xfffff</HybridAdcDataStreamEn>
+            <HybridTrigEn>True</HybridTrigEn>
+            <HybridType>Old</HybridType>
+            <LedEn>True</LedEn>
+            <StatusFrameInterval>0x7735940</StatusFrameInterval>
+            <Ad5144>
+               <Enabled>True</Enabled>
+               <Rdac3>0x0</Rdac3>
+            </Ad5144>
+            <Ad9252>
+               <ChanPowerDown>False</ChanPowerDown>
+               <ConfigEn>False</ConfigEn>
+               <DcoFcoDrive2x>False</DcoFcoDrive2x>
+               <DutyCycleStabilizer>False</DutyCycleStabilizer>
+               <Enabled>False</Enabled>
+               <LowEncodeRate>False</LowEncodeRate>
+               <OutputFormat>OffsetBinary</OutputFormat>
+               <OutputInvert>False</OutputInvert>
+               <OutputMode>LvdsAnsi-644</OutputMode>
+               <OutputPhase>Deg0</OutputPhase>
+               <OutputTermDrive>None</OutputTermDrive>
+               <OutputTestMode>Off</OutputTestMode>
+               <PowerDownMode>ChipRun</PowerDownMode>
+               <ResetPnLongGen>False</ResetPnLongGen>
+               <ResetPnShortGen>False</ResetPnShortGen>
+               <SerialBits>Bits-14</SerialBits>
+               <SerialLsbFirst>False</SerialLsbFirst>
+               <UserPattern1></UserPattern1>
+               <UserPattern2></UserPattern2>
+               <UserTestMode>Off</UserTestMode>
+            </Ad9252>
+            <AdcReadout>
+               <Data0Delay>0x5</Data0Delay>
+               <Data1Delay>0x5</Data1Delay>
+               <Data2Delay>0x5</Data2Delay>
+               <Data3Delay>0x5</Data3Delay>
+               <Data4Delay>0x5</Data4Delay>
+               <Enabled>True</Enabled>
+               <FrameDelay>0x5</FrameDelay>
+            </AdcReadout>
+            <AxiXadc>
+               <Enabled>True</Enabled>
+            </AxiXadc>
+            <Hybrid>
+               <Enabled>False</Enabled>
+               <Ads1115>
+                  <CompLat>Non-latching</CompLat>
+                  <CompMode>Traditional</CompMode>
+                  <CompPol>Active Low</CompPol>
+                  <CompQue>One conversion</CompQue>
+                  <DataRate>8 SPS</DataRate>
+                  <Enabled>False</Enabled>
+                  <Mode>Continuous</Mode>
+                  <Mux>P:AIN0 N:AIN1</Mux>
+                  <Pga>6.144V</Pga>
+                  <ThresholdHigh></ThresholdHigh>
+                  <ThresholdLow></ThresholdLow>
+               </Ads1115>
+               <Ads7924>
+                  <AcqTime></AcqTime>
+                  <AlarmCount></AlarmCount>
+                  <AlarmEnable></AlarmEnable>
+                  <CalCntl>CH3</CalCntl>
+                  <ChannelSel></ChannelSel>
+                  <ConvCtrl>Continue</ConvCtrl>
+                  <Enabled>False</Enabled>
+                  <IntConfig>Alarm, Alarm</IntConfig>
+                  <IntPol>Active low</IntPol>
+                  <IntTrig>Level</IntTrig>
+                  <LowerThreshold0></LowerThreshold0>
+                  <LowerThreshold1></LowerThreshold1>
+                  <LowerThreshold2></LowerThreshold2>
+                  <LowerThreshold3></LowerThreshold3>
+                  <Mode>Idle</Mode>
+                  <PwrConEn>False</PwrConEn>
+                  <PwrConPol>Active low</PwrConPol>
+                  <PwrUpTime></PwrUpTime>
+                  <SleepDiv4>1</SleepDiv4>
+                  <SleepMult8>1</SleepMult8>
+                  <SleepTime>2.5 ms</SleepTime>
+                  <UpperThreshold0></UpperThreshold0>
+                  <UpperThreshold1></UpperThreshold1>
+                  <UpperThreshold2></UpperThreshold2>
+                  <UpperThreshold3></UpperThreshold3>
+               </Ads7924>
+               <apv25>
+                  <CalGroup>0</CalGroup>
+                  <CalibInhibit>True</CalibInhibit>
+                  <Csel>Dly_1x3_125ns</Csel>
+                  <Enabled>True</Enabled>
+                  <Ical>29</Ical>
+                  <ImuxIn>34</ImuxIn>
+                  <Ipcasc>52</Ipcasc>
+                  <Ipre>98</Ipre>
+                  <Ipsf>34</Ipsf>
+                  <Ipsp>55</Ipsp>
+                  <Isha>34</Isha>
+                  <Ispare></Ispare>
+                  <Issf>34</Issf>
+                  <Latency>132</Latency>
+                  <MuxGain>Mip_1_0mA</MuxGain>
+                  <PreampPolarity>Inverting</PreampPolarity>
+                  <ReadOutFrequency>Mhz40</ReadOutFrequency>
+                  <ReadOutMode>Peak</ReadOutMode>
+                  <TriggerMode>Sample3</TriggerMode>
+                  <Vfp>30</Vfp>
+                  <Vfs>60</Vfs>
+                  <Vpsp>30</Vpsp>
+               </apv25>
+            </Hybrid>
+            <HybridSyncStatus>
+               <Enabled>True</Enabled>
+            </HybridSyncStatus>
+            <Ltc2991>
+               <AcquisitionMode>Repeated</AcquisitionMode>
+               <Enabled>True</Enabled>
+               <PwmEnable>False</PwmEnable>
+               <PwmInvert>False</PwmInvert>
+               <TInternalFilterEn>False</TInternalFilterEn>
+               <TInternalKelvin>Celsius</TInternalKelvin>
+               <TInternalVccEnable>True</TInternalVccEnable>
+               <V1V2Diff>Differential</V1V2Diff>
+               <V1V2Enable>True</V1V2Enable>
+               <V1V2FilterEn>False</V1V2FilterEn>
+               <V1V2Kelvin>Celsius</V1V2Kelvin>
+               <V1V2Temp>Voltage</V1V2Temp>
+               <V3V4Diff>Differential</V3V4Diff>
+               <V3V4Enable>True</V3V4Enable>
+               <V3V4FilterEn>False</V3V4FilterEn>
+               <V3V4Kelvin>Celsius</V3V4Kelvin>
+               <V3V4Temp>Voltage</V3V4Temp>
+               <V5V6Diff>Differential</V5V6Diff>
+               <V5V6Enable>True</V5V6Enable>
+               <V5V6FilterEn>False</V5V6FilterEn>
+               <V5V6Kelvin>Celsius</V5V6Kelvin>
+               <V5V6Temp>Voltage</V5V6Temp>
+               <V7V8Diff>Differential</V7V8Diff>
+               <V7V8Enable>True</V7V8Enable>
+               <V7V8FilterEn>False</V7V8FilterEn>
+               <V7V8Kelvin>Celsius</V7V8Kelvin>
+               <V7V8Temp>Voltage</V7V8Temp>
+            </Ltc2991>
+            <SoftPowerMonitor>
+               <Enabled>True</Enabled>
+            </SoftPowerMonitor>
+         </FebCore>
+         <RceCore>
+            <CalibrationEn>False</CalibrationEn>
+            <CalibrationGroup>0x0</CalibrationGroup>
+            <Enabled>True</Enabled>
+            <RceAddress>0x0</RceAddress>
+            <SlopeCutEn>False</SlopeCutEn>
+            <ThresholdCutEn>False</ThresholdCutEn>
+            <DataPath>
+               <Enabled>True</Enabled>
+            </DataPath>
+            <EventBuilder>
+               <DataPathEn>0xf</DataPathEn>
+               <Enabled>True</Enabled>
+               <MaxEventSize>0xfff</MaxEventSize>
+            </EventBuilder>
+         </RceCore>
+      </FrontEndTestFpga>
+      <Enabled>True</Enabled>
+      <FrontEndTestFpga index="0">
+         <Enabled>True</Enabled>
+         <AxiVersion index="0">
+            <Enabled>True</Enabled>
+            <ScratchPad>0x0</ScratchPad>
+         </AxiVersion>
+         <FebCore index="0">
+            <A1.6VTrim>0xb4</A1.6VTrim>
+            <A2.2VTrim>0x96</A2.2VTrim>
+            <A2.9VAvddTrim>0xb4</A2.9VAvddTrim>
+            <A2.9VDvddTrim>0xb4</A2.9VDvddTrim>
+            <Adc0ClkPhaseShift>0xa0</Adc0ClkPhaseShift>
+            <Adc1ClkPhaseShift>0xa0</Adc1ClkPhaseShift>
+            <Adc2ClkPhaseShift>0xa0</Adc2ClkPhaseShift>
+            <Adc3ClkPhaseShift>0xa0</Adc3ClkPhaseShift>
+            <ApvDataStreamEn>0xf</ApvDataStreamEn>
+            <Enabled>True</Enabled>
+            <FebAddress>0x0</FebAddress>
+            <Hybrid0AvddTrim>0xaa</Hybrid0AvddTrim>
+            <Hybrid0ClkPhaseShift>0x0</Hybrid0ClkPhaseShift>
+            <Hybrid0DvddTrim>0x96</Hybrid0DvddTrim>
+            <Hybrid0PwrEn>False</Hybrid0PwrEn>
+            <Hybrid0V1_25Trim>0xb4</Hybrid0V1_25Trim>
+            <Hybrid1AvddTrim>0xaa</Hybrid1AvddTrim>
+            <Hybrid1ClkPhaseShift>0x0</Hybrid1ClkPhaseShift>
+            <Hybrid1DvddTrim>0x96</Hybrid1DvddTrim>
+            <Hybrid1PwrEn>False</Hybrid1PwrEn>
+            <Hybrid1V1_25Trim>0xb4</Hybrid1V1_25Trim>
+            <Hybrid2AvddTrim>0xaa</Hybrid2AvddTrim>
+            <Hybrid2ClkPhaseShift>0x0</Hybrid2ClkPhaseShift>
+            <Hybrid2DvddTrim>0x96</Hybrid2DvddTrim>
+            <Hybrid2PwrEn>False</Hybrid2PwrEn>
+            <Hybrid2V1_25Trim>0xb4</Hybrid2V1_25Trim>
+            <Hybrid3AvddTrim>0xaa</Hybrid3AvddTrim>
+            <Hybrid3ClkPhaseShift>0x0</Hybrid3ClkPhaseShift>
+            <Hybrid3DvddTrim>0x96</Hybrid3DvddTrim>
+            <Hybrid3PwrEn>False</Hybrid3PwrEn>
+            <Hybrid3V1_25Trim>0xb4</Hybrid3V1_25Trim>
+            <HybridAdcDataStreamEn>0xfffff</HybridAdcDataStreamEn>
+            <HybridType>Old</HybridType>
+            <Ad5144 index="0">
+               <Enabled>True</Enabled>
+               <Rdac3>0x0</Rdac3>
+            </Ad5144>
+            <Ad5144 index="1">
+               <Enabled>True</Enabled>
+               <Rdac3>0x0</Rdac3>
+            </Ad5144>
+            <Ad5144 index="2">
+               <Enabled>True</Enabled>
+               <Rdac3>0x0</Rdac3>
+            </Ad5144>
+            <Ad5144 index="3">
+               <Enabled>True</Enabled>
+               <Rdac3>0x0</Rdac3>
+            </Ad5144>
+            <Ad5144 index="4">
+               <Enabled>True</Enabled>
+            </Ad5144>
+            <Ad9252 index="0">
+               <ConfigEn>False</ConfigEn>
+               <Enabled>False</Enabled>
+               <PowerDownMode>ChipRun</PowerDownMode>
+            </Ad9252>
+            <Ad9252 index="1">
+               <ConfigEn>False</ConfigEn>
+               <Enabled>False</Enabled>
+               <PowerDownMode>ChipRun</PowerDownMode>
+            </Ad9252>
+            <Ad9252 index="2">
+               <ConfigEn>False</ConfigEn>
+               <Enabled>False</Enabled>
+               <PowerDownMode>ChipRun</PowerDownMode>
+            </Ad9252>
+            <Ad9252 index="3">
+               <ConfigEn>False</ConfigEn>
+               <Enabled>False</Enabled>
+               <PowerDownMode>ChipRun</PowerDownMode>
+            </Ad9252>
+            <AdcReadout index="0">
+               <Enabled>True</Enabled>
+            </AdcReadout>
+            <AdcReadout index="1">
+               <Enabled>True</Enabled>
+            </AdcReadout>
+            <AdcReadout index="2">
+               <Enabled>True</Enabled>
+            </AdcReadout>
+            <AdcReadout index="3">
+               <Enabled>True</Enabled>
+            </AdcReadout>
+            <AxiXadc index="0">
+               <Enabled>True</Enabled>
+            </AxiXadc>
+            <Hybrid index="0">
+               <Enabled>False</Enabled>
+               <Ads1115 index="0">
+                  <Enabled>False</Enabled>
+               </Ads1115>
+               <Ads7924 index="0">
+                  <Enabled>False</Enabled>
+               </Ads7924>
+               <apv25 index="0">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="1">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="2">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="3">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="4">
+                  <Enabled>True</Enabled>
+               </apv25>
+            </Hybrid>
+            <Hybrid index="1">
+               <Enabled>False</Enabled>
+               <Ads1115 index="0">
+                  <Enabled>False</Enabled>
+               </Ads1115>
+               <Ads7924 index="0">
+                  <Enabled>False</Enabled>
+               </Ads7924>
+               <apv25 index="0">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="1">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="2">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="3">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="4">
+                  <Enabled>True</Enabled>
+               </apv25>
+            </Hybrid>
+            <Hybrid index="2">
+               <Enabled>False</Enabled>
+               <Ads1115 index="0">
+                  <Enabled>False</Enabled>
+               </Ads1115>
+               <Ads7924 index="0">
+                  <Enabled>False</Enabled>
+               </Ads7924>
+               <apv25 index="0">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="1">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="2">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="3">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="4">
+                  <Enabled>True</Enabled>
+               </apv25>
+            </Hybrid>
+            <Hybrid index="3">
+               <Enabled>False</Enabled>
+               <Ads1115 index="0">
+                  <Enabled>False</Enabled>
+               </Ads1115>
+               <Ads7924 index="0">
+                  <Enabled>False</Enabled>
+               </Ads7924>
+               <apv25 index="0">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="1">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="2">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="3">
+                  <Enabled>True</Enabled>
+               </apv25>
+               <apv25 index="4">
+                  <Enabled>True</Enabled>
+               </apv25>
+            </Hybrid>
+            <HybridSyncStatus index="0">
+               <Enabled>True</Enabled>
+            </HybridSyncStatus>
+            <HybridSyncStatus index="1">
+               <Enabled>True</Enabled>
+            </HybridSyncStatus>
+            <HybridSyncStatus index="2">
+               <Enabled>True</Enabled>
+            </HybridSyncStatus>
+            <HybridSyncStatus index="3">
+               <Enabled>True</Enabled>
+            </HybridSyncStatus>
+            <Ltc2991 index="0">
+               <Enabled>True</Enabled>
+            </Ltc2991>
+            <Ltc2991 index="1">
+               <Enabled>True</Enabled>
+            </Ltc2991>
+            <Ltc2991 index="2">
+               <Enabled>True</Enabled>
+            </Ltc2991>
+            <Ltc2991 index="3">
+               <Enabled>True</Enabled>
+            </Ltc2991>
+            <Ltc2991 index="4">
+               <Enabled>True</Enabled>
+            </Ltc2991>
+            <SoftPowerMonitor index="0">
+               <Enabled>True</Enabled>
+            </SoftPowerMonitor>
+         </FebCore>
+         <RceCore index="0">
+            <Enabled>True</Enabled>
+            <RceAddress>0x0</RceAddress>
+            <DataPath index="0">
+               <Enabled>True</Enabled>
+            </DataPath>
+            <DataPath index="1">
+               <Enabled>True</Enabled>
+            </DataPath>
+            <DataPath index="2">
+               <Enabled>True</Enabled>
+            </DataPath>
+            <DataPath index="3">
+               <Enabled>True</Enabled>
+            </DataPath>
+            <EventBuilder index="0">
+               <Enabled>True</Enabled>
+            </EventBuilder>
+         </RceCore>
+      </FrontEndTestFpga>
+   </config>
+</system>

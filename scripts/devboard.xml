@@ -1,0 +1,123 @@
+<system>
+   <config>
+      <RunRate>10Hz</RunRate>
+      <RunCount>1000</RunCount>
+      <DebugEnable>False</DebugEnable>
+      <TempPollPer>0</TempPollPer>
+      <TholdFile></TholdFile>
+      <FilterFile></FilterFile>
+      <IntTrigEn>False</IntTrigEn>
+      <LiveDisplay>True</LiveDisplay>
+      <IgnoreErrors>True</IgnoreErrors>
+      <TrigPollEn>False</TrigPollEn>
+      <cntrlFpga>
+         <ad9252>
+            <ConfigEn>False</ConfigEn>
+            <Enabled>False</Enabled>
+         </ad9252>
+         <hybrid>
+            <apv25>
+               <CalibInhibit>True</CalibInhibit>
+               <CalGroup>0x0</CalGroup>
+               <Csel>Dly_1x3_125ns</Csel>
+               <Ical>0x1D</Ical>
+               <ImuxIn>0x22</ImuxIn>
+               <Ipcasc>0x34</Ipcasc>
+               <Ipre>0x62</Ipre>
+               <Ipsf>0x22</Ipsf>
+               <Ipsp>0x37</Ipsp>
+               <Isha>0x22</Isha>
+               <Ispare>0x0</Ispare>
+               <Issf>0x22</Issf>
+               <Latency>132</Latency>
+               <MuxGain>Mip_1_0mA</MuxGain>
+               <PreampPolarity>Inverting</PreampPolarity>
+               <ReadOutFrequency>Mhz40</ReadOutFrequency>
+               <ReadOutMode>Peak</ReadOutMode>
+               <TriggerMode>Sample3</TriggerMode>
+               <Vfp>0x1e</Vfp>
+               <Vfs>0x3c</Vfs>
+               <Vpsp>0x0f</Vpsp>
+               <Enabled>False</Enabled>
+            </apv25>
+            <Enabled>False</Enabled>
+         </hybrid>
+         <TempPollPer>200000000</TempPollPer>
+         <ClockSelect>Internal</ClockSelect>
+         <AdcEnable>0x1F</AdcEnable>
+         <AdcClkDelay>10</AdcClkDelay>
+         <AdcClkInvert>False</AdcClkInvert>
+         <ApvTrigGenPause>6999999</ApvTrigGenPause>
+         <ApvTrigSource>Software</ApvTrigSource>
+         <ApvTrigType>DoubleTrig</ApvTrigType>
+         <CalDelay>0x81</CalDelay>
+         <FrameDelayA>0x21</FrameDelayA>
+         <FrameDelayB>0x21</FrameDelayB>
+         <InputDelayA>0x21</InputDelayA>
+         <InputDelayB>0x21</InputDelayB>
+         <InputDelayC>0x21</InputDelayC>
+         <InputDelayD>0x21</InputDelayD>
+         <InputDelayE>0x21</InputDelayE>
+         <InputDelayF>0x21</InputDelayF>
+         <InputDelayG>0x21</InputDelayG>
+         <InputDelayH>0x21</InputDelayH>
+         <InputDelayI>0x21</InputDelayI>
+         <InputDelayJ>0x21</InputDelayJ>
+         <InputDelayK>0x21</InputDelayK>
+         <InputDelayL>0x21</InputDelayL>
+         <InputDelayM>0x21</InputDelayM>
+         <InputDelayN>0x21</InputDelayN>
+         <InputDelayO>0x21</InputDelayO>
+         <TholdEnable>False</TholdEnable>
+         <NewRegisters>False</NewRegisters>
+         <DataBypass>False</DataBypass>
+         <FiltEnable>False</FiltEnable>
+         <Enabled>True</Enabled>
+         <hybrid>
+            <apv25 index="0">
+               <Enabled>False</Enabled>
+            </apv25>
+            <apv25 index="1">
+               <Enabled>False</Enabled>
+            </apv25>
+            <apv25 index="2">
+               <Enabled>False</Enabled>
+            </apv25>
+            <apv25 index="3">
+               <Enabled>False</Enabled>
+            </apv25>
+            <apv25 index="4">
+               <Enabled>False</Enabled>
+            </apv25>
+            <Enabled>False</Enabled>
+         </hybrid>
+      </cntrlFpga>
+      <cntrlFpga index="0">
+         <hybrid index="0">
+            <Enabled>True</Enabled>
+            <apv25 index="0">
+               <Enabled>True</Enabled>
+            </apv25>
+            <apv25 index="1">
+               <Enabled>True</Enabled>
+            </apv25>
+            <apv25 index="2">
+               <Enabled>True</Enabled>
+            </apv25>
+            <apv25 index="3">
+               <Enabled>True</Enabled>
+            </apv25>
+            <apv25 index="4">
+               <Enabled>True</Enabled>
+            </apv25>
+         </hybrid>
+         <hybrid index="1">
+            <Enabled>False</Enabled>
+         </hybrid>
+         <hybrid index="2">
+            <Enabled>False</Enabled>
+         </hybrid>
+      </cntrlFpga>
+ </config>
+</system>
+
