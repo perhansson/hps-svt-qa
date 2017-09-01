@@ -1,10 +1,12 @@
 
-# Base directory
+export QA_DIR=$PWD
+
+# Base DAQ directory must exist
 if [ ! -d "$PWD/daq" ]; then
     echo "Need to create symlink to a daq/ directory; e.g. \$ln -s svt-daq daq."
 	return 1
 fi
-export BASE=$PWD/daq
+export BASE=$QA_DIR/daq
 
 if [ "$MACHINE" == "" ]; then
     export MACHINE=`uname -m`
